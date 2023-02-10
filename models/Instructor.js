@@ -1,5 +1,5 @@
 const { Model, DataTypes } = require("sequelize");
-const sequelize = require("../condfig/connection");
+const sequelize = require("../config/connection");
 
 class Intructor extends Model {}
 
@@ -36,4 +36,4 @@ Intructor.init(
   }
 );
 
-module.export = Intructor;
+module.exports = Intructor;

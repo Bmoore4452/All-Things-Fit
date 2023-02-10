@@ -1,5 +1,5 @@
 const { Model, DataTypes } = require("sequelize");
-const sequelize = require("../condfig/connection");
+const sequelize = require("../config/connection");
 
 class UpperBody extends Model {}
 
@@ -36,4 +36,4 @@ UpperBody.init(
   }
 );
 
-module.export = UpperBody;
+module.exports = UpperBody;
