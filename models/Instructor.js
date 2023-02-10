@@ -24,7 +24,7 @@ Intructor.init(
       allowNull: false,
     },
     duration: {
-      type: DataTypes.time,
+      type: DataTypes.TIME,
       allowNull: false,
     },
   },
