@@ -6,16 +6,28 @@ class UpperBody extends Model{}
 UpperBody.init(
     {
     id:{
-       type:DataTypes.INTEGER 
+       type:DataTypes.INTEGER,
+       primaryKey:true,
+        autoIncrement:true,
+        allowNull:false
 
     },
      workout:{
-        type: DataTypes.STRING
+        type: DataTypes.STRING,
+        allowNull:false
     },
     description:{
-        type:DataTypes.STRING
+        type:DataTypes.STRING,
+        allowNull:false
 
     }
-}
+},
+ {
+    sequelize,
+    freezeTableName: true,
+    underscored: true,
+    modelName: 'upperbody',
+  }
 )
 
+module.export = UpperBody;
