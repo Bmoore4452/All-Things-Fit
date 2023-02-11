@@ -8,7 +8,7 @@ header {
   margin-left: auto;
   margin-right: auto;
   border: solid;
-  background-color: rgb(234, 51, 59);
+  background-color: rgb(255, 0, 48);
   color: white;
 }
 
@@ -22,6 +22,31 @@ nav ul {
 
 li {
   padding: 20px;
+}
+
+
+#home-image {
+  width: 70%;
+  margin: auto;
+  /* border: solid; */
+  display: block;
+  padding: 2em;
+}
+
+.main-container {
+  width: 80%;
+  margin: auto;
+}
+
+.logo {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.intro-text {
+  text-align: center;
+  color: rgb(255, 0, 48);
+  font-weight: 600;
 }
 
 
@@ -166,6 +191,7 @@ button{
     color: darkgray;
 }
 
+
 .random{
     overflow-x: hidden;
     display: flex;
@@ -185,3 +211,5 @@ button{
 .description{
     text-align: center;
 }
+
+
