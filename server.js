@@ -13,7 +13,8 @@ app.engine("handlebars", hbs.engine);
 app.set("view engine", "handlebars");
 
 app.get("/", (req, res) => {
-  res.render("landingpage");
+  res.render("random");
+})
 
 
 
@@ -25,8 +26,7 @@ app.get("/", (req, res) => {
 // app.use(routes);
 
 app.use(express.static(__dirname + "/public"));
-sequelize.sync().then(() => {
-  app.listen(PORT, () => {
-    console.log("server is up");
-  });
+
+sequelize.sync({ force: false }).then(() => {
+  app.listen(PORT, () => console.log('Now listening'));
 });
