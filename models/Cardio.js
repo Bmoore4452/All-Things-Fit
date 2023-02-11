@@ -23,6 +23,9 @@ Cardio.init(
         },
         time: {
             type: DataTypes.TIME,
+        },
+        numberOfSet: {
+            type: DataTypes.INTEGER,
         }
     },
     {
