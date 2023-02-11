@@ -23,7 +23,7 @@ UpperBody.init(
       type: DataTypes.INTEGER,
       allowNull: false,
     },
-    numberofRep: {
+    numberOfRep: {
       type: DataTypes.INTEGER,
       allowNull: false,
     },
