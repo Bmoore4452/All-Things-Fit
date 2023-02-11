@@ -135,7 +135,7 @@ main{
     font-weight: lighter;
 }
 hr{
-    border-bottom: 1px solid rgb(234, 51, 59);
+    border-bottom: 1px solid rgb(255, 0, 48);
     width: 70px;
     margin-bottom: 10%;
     margin-top: 10%;
@@ -163,7 +163,7 @@ hr{
 button{
     width: 28vw;
     height: 60px;
-    background-color: rgb(234, 51, 59);
+    background-color: rgb(255, 0, 48);
     color: white;
     font-size: 1.5rem;
     border: none;

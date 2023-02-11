@@ -6,7 +6,7 @@ const router = require('express').Router();
 // router.get('/instructor', async(req, res)
 
 router.get('/', async (req, res) => {
-    res.render('all');
+    res.render('instructor');
   });
 
 
