@@ -1,3 +1,8 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
 header {
   width: 80%;
   margin-left: auto;
@@ -18,6 +23,7 @@ nav ul {
 li {
   padding: 20px;
 }
+
 
 #home-image {
   width: 70%;
@@ -42,3 +48,136 @@ li {
   color: rgb(255, 0, 48);
   font-weight: 600;
 }
+
+
+/* AFTER SIGN IN LANDING PAGE (ERIC) */
+
+main{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.title{
+    height: 10vh;
+    width: 90vw;
+}
+
+.card-container{
+    height: 610px;
+    width: 98vw;
+    overflow-x: hidden;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.card{
+    height: 560px;
+    width: 30vw;
+    background-color: rgba(235, 235, 235, 0.706);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 5px 8px 15px grey;
+}
+
+.card-image-1{
+    min-height: 200px;
+    width: 30vw;
+    background-image: url(https://images.unsplash.com/photo-1518459031867-a89b944bffe4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1141&q=80);
+    background-position: 50% 50%;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(255, 255, 255);
+}
+
+.card-image-2{
+    min-height: 200px;
+    width: 30vw;
+    background-image: url(https://images.unsplash.com/photo-1584735935682-2f2b69dff9d2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1171&q=80);
+    background-size: cover;
+    background-position: 100% 20%;
+      display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(255, 255, 255);
+}
+.card-image-3{
+    min-height: 200px;
+    width: 30vw;
+     background-image: url(https://images.unsplash.com/photo-1483721310020-03333e577078?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=928&q=80);
+    background-size: cover;
+      display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(255, 255, 255);
+    
+}
+
+.card-title{
+    padding: 2px;
+    font-size: 1.1rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    backdrop-filter: blur(2px);
+    text-shadow: 2px 2px 2px black;
+}
+
+.card-top-text{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    min-height: 80px;
+    font-size: 1.3rem;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: lighter;
+}
+hr{
+    border-bottom: 1px solid rgb(234, 51, 59);
+    width: 70px;
+    margin-bottom: 10%;
+    margin-top: 10%;
+    text-align: center;
+}
+.card-bottom-text{
+    min-height: 100px;
+    width: 30vw;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 1.1rem;
+}
+
+.card-button {
+    width: 30vw;
+    min-height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button{
+    width: 28vw;
+    height: 60px;
+    background-color: rgb(234, 51, 59);
+    color: white;
+    font-size: 1.5rem;
+    border: none;
+}
+
+.icons {
+    width: 98vw;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+/* END (ERIC) */
+
+
+
+
+
