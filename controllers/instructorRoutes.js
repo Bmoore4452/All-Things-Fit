@@ -10,6 +10,9 @@ router.get('/', async(req, res) => {
             attributes:['video','title','type','duration']
         }
     });
+    const workouts = instructorData.map(workout) =>{
+        workout.get({plain:true)
+    }
     if(!instructorData){
         res.status(404).json({message:"There are currently no Insturctor Workouts"})
     }
