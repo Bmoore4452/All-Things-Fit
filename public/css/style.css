@@ -153,5 +153,35 @@ button{
 /* END (ERIC) */
 
 
+.workout-page {
+    align-items: center;
+}
 
+.db-list{
+    list-style:  none;
+    font-size: medium;
+}
+.db-selection{
+    font-size: medium;
+    color: darkgray;
+}
 
+.random{
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.selector{
+  
+    height: 60px;
+    padding: 5%;
+}
+.generate{
+    margin-top: 20%;
+}
+
+.description{
+    text-align: center;
+}
