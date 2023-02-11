@@ -18,3 +18,28 @@ nav ul {
 li {
   padding: 20px;
 }
+
+.container {
+  display: flex;
+  /* flex-direction: column; */
+ 
+  justify-content: space-around;
+  align-items: center;
+  background-color: blue;
+}
+
+.row-custom{
+
+  background-color: green;
+  padding: 20px;
+  border: 3px solid black;
+  flex-grow: inherit;
+  
+}
+
+.video{
+  height: 300px;
+  width: 500px;
+  padding: 30px;
+}
+
