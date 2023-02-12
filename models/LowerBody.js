@@ -16,11 +16,11 @@ LowerBody.init(
     workout: {
       type: DataTypes.STRING,
     },
-    description: {
-      type: DataTypes.STRING,
+    numberOfSets: {
+      type: DataTypes.INTEGER,
     },
     numberOfReps: {
-      type: DataTypes.STRING,
+      type: DataTypes.INTEGER,
     },
   },
   {
