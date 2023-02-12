@@ -20,10 +20,11 @@
   "homepage": "https://github.com/Bmoore4452/All-Things-Fit#readme",
   "dependencies": {
     "authentication-flows-js": "^1.0.16",
+    "connect-session-sequelize": "^7.1.5",
     "dotenv": "^16.0.3",
     "express": "^4.18.2",
     "express-handlebars": "^6.0.7",
-    "express-sessions": "^1.0.6",
+    "express-session": "^1.17.3",
     "mysql2": "^3.1.2",
     "sequelize": "^6.28.0"
   }
