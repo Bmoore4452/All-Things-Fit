@@ -1,33 +1,35 @@
 <main>
     <div class="title workout-page">
-<H2 class="workout-page">Instructor Led Workouts</H2>
+        <H2 class="workout-page">Instructor Led Workouts</H2>
     </div>
-<div>
-     
-<div class="card-container">
-   
-    <div class = "row card list">
-        <div>
-<p  class="card-top-text"> List of Workouts</p>
-        </div>
-        {{!-- {{#if listExists}} --}}
-        <div>
-        <ul class="db-list">
-            <li class="db-selection">workout 1</li>
-            <li class="db-selection">workout 2</li>
-            <li class="db-selection">workout 3</li>
-        </ul>
+    <div>
+
+        <div class="card-container">
+
+            <div class="row card list">
+                <div>
+                    <p class="card-top-text"> List of Workouts</p>
+                </div>
+                <div>
+                    <ul class="db-list">
+                        {{#each instructors}}
+                        <li class="db-selection">{{this.dataValues.title}}</li>
+                        {{!--
+                        <li class="db-selection">workout 2</li>
+                        <li class="db-selection">workout 3</li> --}}
+                        {{/each}}
+                    </ul>
+                </div>
+            </div>
+            <div class="row card main-content">
+                <div>
+                    <p class="card-top-text">Workout Name here pulled in from database</p>
+                </div>
+
+                <div class=" card-image-1">
+                    <p>video</p>
+                </div>
+            </div>
         </div>
     </div>
-    <div class="row card main-content" >
-        <div>
-            <p class="card-top-text">Workout Name here pulled in from database</p>
-        </div>
-        
-        <div class=" card-image-1">
-            <p>video</p>
-        </div>
-    </div>
-</div>
-</div>
 </main>
