@@ -13,9 +13,12 @@
         {{!-- {{#if listExists}} --}}
         <div>
         <ul class="db-list">
-            <li class="db-selection">workout 1</li>
+            {{#each workout}}
+            <li class="db-selection">{{this.dataValues.workout}}</li>
+            {{!-- <li class="db-selection">workout 1</li>
             <li class="db-selection">workout 2</li>
-            <li class="db-selection">workout 3</li>
+            <li class="db-selection">workout 3</li> --}}
+            {{/each}}
         </ul>
         </div>
     </div>
