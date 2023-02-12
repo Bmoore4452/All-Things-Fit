@@ -19,6 +19,8 @@ User.init(
       type: DataTypes.STRING,
       allowNull: false,
     },
+
+    // ADD PASSWORD COLUMN???
   },
   {
     sequelize,
@@ -26,6 +28,7 @@ User.init(
     underscored: true,
     modelName: "user",
   }
+
 );
 
 module.exports = User;
