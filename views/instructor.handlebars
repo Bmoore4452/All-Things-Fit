@@ -13,7 +13,8 @@
                 <div>
                     <ul class="db-list">
                         {{#each instructors}}
-                        <li class="db-selection">{{this.dataValues.title}}</li>
+                        <li class="db-selection" onclick="generateWorkout({{this.dataValues.id}})">
+                            {{this.dataValues.title}}</li>
                         {{!--
                         <li class="db-selection">workout 2</li>
                         <li class="db-selection">workout 3</li> --}}
@@ -23,13 +24,15 @@
             </div>
             <div class="row card main-content">
                 <div>
-                    <p class="card-top-text">Workout Name here pulled in from database</p>
+                    <p class="card-top-text" id="workout-name">Workout Name here pulled in from database</p>
                 </div>
 
-                <div class=" card-image-1">
+                <div class=" card-image-1" id="workout-video">
                     <p>video</p>
                 </div>
             </div>
         </div>
     </div>
 </main>
+
+<script src="/js/instructor.js"></script>

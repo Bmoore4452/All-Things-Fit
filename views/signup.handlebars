@@ -5,17 +5,19 @@
         </div>
 
         <label for="username"><b>Username</b></label>
-        <input type="text" placeholder="Enter Username" name = "username" required>
+        <input id="username-input" type="text" placeholder="Enter Username" name="username" required>
 
         <label for="psw"><b>Password</b></label>
-        <input type="text" placeholder="Enter Password" name = "psw" required>
+        <input id="password-input" type="text" placeholder="Enter Password" name="psw" required>
 
         <label for="psw2"><b>Password Comfirmation</b></label>
-        <input type="text" placeholder="Enter Password" name = "psw2" required>
+        <input type="text" placeholder="Enter Password" name="psw2" required>
 
         <div class="card-button loginTitle">
-            <button type="submit">Sign-Up</button>
-        </div>        
+            <button onclick="handleSubmit()">Sign-Up</button>
+        </div>
     </div>
 
 </main>
+
+<script src="/js/signUp.js"></script>
