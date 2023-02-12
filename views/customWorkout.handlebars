@@ -1,0 +1,33 @@
+{{!-- list of specified workouts --}}
+<div class = "card-container">
+    {{#each serializedData as |data|}}
+    <div class="card">
+        <div class="card-body">
+            <h5 class="card-title">{{data.id}}</h5>
+            <p class="card-text">{{data.}}</p>
+        </div>
+    </div>
+    {{/each}}
+    <button class="upperBodyBtn">Upper Body</button>
+    <button class="lowerBodyBtn">Lower Body</button>
+    <button class="cardioBtn">Cardio</button>
+</div>
+
+{{!-- slected workout fields --}}
+<div>
+    {{#each}}
+    <div></div>
+    {{/each}}
+    <button>add</button>
+</div>
+
+{{!-- new maped array --}}
+<div>
+    {{#each}}
+    <div>
+
+
+    </div>
+    {{/each}}
+    <button>delete</button>
+</div>
