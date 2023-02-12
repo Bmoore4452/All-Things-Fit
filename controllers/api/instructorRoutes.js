@@ -3,6 +3,7 @@ const { Instructor } = require('../../models');
 
 const router = require('express').Router();
 
+
 router.get("/", (req, res) => {
   Instructor.findAll()
     .then(instructorData => {
@@ -14,5 +15,7 @@ router.get("/", (req, res) => {
       res.status(500).json(err);
     });
 });
+
+
 
 module.exports = router;
