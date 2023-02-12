@@ -1,4 +1,4 @@
-const { UpperBody } = require("../Model");
+const { UpperBody } = require("../models");
 
 const upperBodyData = [
   {
@@ -24,6 +24,6 @@ const upperBodyData = [
 ];
 
 
-const seedUpperBody = () => LowerBody.bulkCreate(upperBodyData);
+const seedUpperBody = () => UpperBody.bulkCreate(upperBodyData);
 
 module.exports = seedUpperBody;

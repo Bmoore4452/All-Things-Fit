@@ -15,10 +15,6 @@ UpperBody.init(
       type: DataTypes.STRING,
       allowNull: false,
     },
-    description: {
-      type: DataTypes.STRING,
-      allowNull: false,
-    },
     numberOfSet: {
       type: DataTypes.INTEGER,
       allowNull: false,

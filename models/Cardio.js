@@ -17,12 +17,14 @@ Cardio.init(
         },
         description: {
             type: DataTypes.STRING,
+            allowNull: false,
+            defaultValue: "Long Run",
         },
         distance: {
-            type: DataTypes.INTEGER,
+            type: DataTypes.STRING,
         },
         time: {
-            type: DataTypes.TIME,
+            type: DataTypes.INTEGER,
         },
         numberOfSet: {
             type: DataTypes.INTEGER,

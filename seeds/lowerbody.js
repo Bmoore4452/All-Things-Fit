@@ -1,25 +1,25 @@
-const { LowerBody } = require("../Model");
+const { LowerBody } = require("../models");
 
 const lowerBodyData = [
   {
     workout: "Leg Press",
-    numberOfSet: 3,
-    numberOfRep: 15,
+    numberOfSets: 3,
+    numberOfReps: 15,
   },
   {
     workout: "Leg Extention",
-    numberOfSet: 3,
-    numberOfRep: 15,
+    numberOfSets: 3,
+    numberOfReps: 15,
   },
   {
     workout: "Squats",
-    numberOfSet: 2,
-    numberOfRep: 20,
+    numberOfSets: 2,
+    numberOfReps: 20,
   },
   {
     workout: "Calf Raises",
-    numberOfSet: 3,
-    numberOfRep: 10,
+    numberOfSets: 3,
+    numberOfReps: 10,
   },
 ];
 
