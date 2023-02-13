@@ -13,12 +13,12 @@
         {{!-- {{#if listExists}} --}}
         <div>
         <ul class="db-list">
-            {{#each workout}}
-            <li class="db-selection">{{this.dataValues.workout}}</li>
-            {{!-- <li class="db-selection">workout 1</li>
+            {{!-- {{#each workout}} --}}
+            {{!-- <li class="db-selection" id="cardioRandom">{{this.dataValues.workout}}</li> --}}
+            <li class="db-selection" id="randomCardio">workout 1</li>
             <li class="db-selection">workout 2</li>
-            <li class="db-selection">workout 3</li> --}}
-            {{/each}}
+            <li class="db-selection">workout 3</li>        
+            {{!-- {{/each}} --}}
         </ul>
         </div>
     </div>
@@ -31,20 +31,21 @@
         </div>
         <div class="random">
             <div class="selector">
-                <p>Cardio</p>
+                <p id="addCardio">Cardio</p>
             </div>
             <div class="selector">
-                <p>Lower Body</p>
+                <p id="addLowerbody">Lower Body</p>
             </div>
             <div class="selector">
-                 <p>Upper Body</p>
+                 <p id="addUpperBody">Upper Body</p>
             </div>
            
         </div>
         <div>
-            <button class="generate">Generate Workout</button>
+            <button class="generate" id="randomWorkout">Generate Workout</button>
         </div>
     </div>
 </div>
 </div>
 </main>
+<script src="./js/cardio.js"></script>
