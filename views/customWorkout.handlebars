@@ -1,33 +1,33 @@
-{{!-- list of specified workouts --}}
-<div class = "card-container">
-    {{#each serializedData as |data|}}
+{{!-- button populates card container w/ specified workouts --}}
+<div class="card-container loginTitle">
     <div class="card">
-        <div class="card-body">
-            <h5 class="card-title">{{data.id}}</h5>
-            <p class="card-text">{{data.}}</p>
+        <div>
+            <label for="Workout type">Choose a Workout type:</label>
+            <select name="type" id="type">
+            <option value="Cardio">Cardio</option>
+            <option value="UpperBody">UpperBody</option>
+            <option value="LowerBody">LowerBody</option>
+            </select>
         </div>
+        
+        <div>
+            <label for="title"></label>
+            <input id = "title" type="text" placeholder="Title of Workout" maxlength="30">
+        </div>
+
+        <div>
+            <label for="description"></label>
+            <textarea name="description" id="description" placeholder="Enter a short description" col="30" rows="15"></textarea>
+        </div>  
+
+        <input type="submit" onclick="addWorkout()">
+    </div>  
+
+    <div class="card">
+        <div id="temp">
+        </div>   
+    <button>post</button> 
     </div>
-    {{/each}}
-    <button class="upperBodyBtn">Upper Body</button>
-    <button class="lowerBodyBtn">Lower Body</button>
-    <button class="cardioBtn">Cardio</button>
 </div>
 
-{{!-- slected workout fields --}}
-<div>
-    {{#each}}
-    <div></div>
-    {{/each}}
-    <button>add</button>
-</div>
-
-{{!-- new maped array --}}
-<div>
-    {{#each}}
-    <div>
-
-
-    </div>
-    {{/each}}
-    <button>delete</button>
-</div>
+<script src="/js/customWorkout.js"></script>
