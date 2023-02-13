@@ -7,7 +7,8 @@ router.get('/', async(req, res) => {
 router.post('/', async(req, res) => {
     User.create({
         name: req.body.name,
-        email: req.body.email
+        email: req.body.email,
+        password: req.body.email
     })
     .then(createdUser => {
         req.session.save(()=>{
