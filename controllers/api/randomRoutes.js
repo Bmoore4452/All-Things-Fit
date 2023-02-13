@@ -14,6 +14,17 @@ router.get("/", (req, res) => {
       res.status(500).json(err);
     });
 });
+router.get("/data", (req, res) => {
+  Cardio.findAll()
+    .then((cardioData) => {
+      res.status(200).json(cardioData);
+      console.log(cardioData);
+    })
+    .catch((err) => {
+      console.log(err);
+      res.status(500).json(err);
+    });
+});
 
 
 module.exports = router;
