@@ -13,11 +13,6 @@ Profile.init(
     autoIncrement: true,
     allowNull: false,
     primaryKey: true,
-  },
-     userName:{
-    type: DataTypes.STRING,
-    refrences:"User",
-    referencesKey:"id",
  
   },
     height:{
@@ -29,12 +24,24 @@ Profile.init(
  gender:{
     type:DataTypes.STRING,
  },
- user_id:{
+ bmr:{
+   type: DataTypes.INTEGER,
+   
+},
+ibw:{
+   type: DataTypes.INTEGER,
+ 
+},
+goal:{
+   type: DataTypes.STRING,
+   
+},user_id:{
     type: DataTypes.INTEGER,
     refrences:"User",
     referencesKey:"id",
     allowNull: false,
  },
+
 
 },
 {

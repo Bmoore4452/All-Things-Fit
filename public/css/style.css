@@ -244,3 +244,9 @@ button {
   background-color: rgb(255, 0, 48);
   cursor: pointer;
 }
+
+
+.goalh2  {
+  text-align: center;
+  font-weight: 400;
+}
