@@ -1,5 +1,6 @@
 const router = require("express").Router();
 const fitness = require('fitness-calc');
+const { Profile } = require("../../models");
 // const mensBMR = BMR_men(weight, height, age);
 // const womensBMR = BMR_women(weight, height, age);
 // const idealBodyWeightW = IBW_women(height, age);
@@ -7,20 +8,17 @@ const fitness = require('fitness-calc');
 
 
 
-router.get("/", async (req, res) => {
-  res.render("profile");
-});
+
+
+router.get("/data/:id", async (req,res)=> {
+const profileData = await Profile.findOne({where:{user_id:req.params.id}})
+res.status(200).json(profileData);
+})
+
+
 
 router.post("/", async (req, res) => {});
 
 module.exports = router;
 
 
-
-// const weight = 100;
-// const reps = 5;
-
-// const oneRepMax = fitness.oneRepMaxEpley(weight, reps);
-// console.log(oneRepMax);
-
-// res.render("profile",{title:oneRepMax});
