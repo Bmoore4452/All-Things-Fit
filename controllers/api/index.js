@@ -10,8 +10,6 @@ const profileRoutes = require("./profileRoutes")
 
 const customWorkout = require("./customWorkoutRoutes");
 
-
-
 router.use("/instructor", instructorRoutes);
 router.use("/shared", sharedRoutes);
 router.use("/login", loginRoutes);
