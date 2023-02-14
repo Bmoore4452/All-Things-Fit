@@ -1,10 +1,7 @@
 <main>
     <div class="title workout-page">
-<<<<<<< HEAD
-        <H2 class="workout-page">Users Name</H2>
-=======
+      
         <H2 class="workout-page">{{name}}</H2>
->>>>>>> f9d08db (updated profile routes to use sessions)
     </div>
     <div>
 
@@ -22,41 +19,85 @@
   <input type="text" id="weight" name="weight"><br><br>
   <label for="height">Height:</label>
   <input type="text" id="height" name="height"><br><br>
-<<<<<<< HEAD
-=======
-  <input type="checkbox" id="genderfemale" name="vehicle1" value="Bike">
+  <p>Select your gender.</p>
+  <input type="radio" id="genderfemale" name="female" value="female">
 <label for="genderfemale"> Female</label><br>
-<input type="checkbox" id="genderMale" name="vehicle2" value="Car">
+<input type="radio" id="genderMale" name="male" value="gender">
 <label for="genderMale"> Male</label><br>
->>>>>>> f9d08db (updated profile routes to use sessions)
   <input type="submit" value="Submit">
 </form>
                 </div>
             
             <div class="row card main-content">
-                <div>
-                    <p class="card-top-text" id="workout-name">What your pushing for!</p>
+                <div class="goal">
+                    <h2 class="card-top-text" id="workout-name">Goals</p>
                 </div>
 
-                <div>
-                  <h2>Your Goal</h2>
-                    <p>{{GOAL}}</p>
+                <div class="goal">
+                  <h3 class="goalh2">Your Goal</h2>
+                    <p >{{goal}}</p>
                 </div>
-                <div>
-                  <h2>Ideal Body weigh</h2>
-                    <p>{{IBW}}</p>
+                <div class="goal">
+                  <h3>Ideal Body weigh</h2>
+                    <p>{{ibm}}</p>
                 </div>
-                <div>
-                  <h2>Basal Metabolism Rate</h2>
-                    <p>{{BMR}}</p>
+                <div class="goal">
+                  <h3>Basal Metabolism Rate</h2>
+                    <p>{{bmr}}</p>
                 </div>
             </div>
         </div>
     </div>
 </main>
 
-<<<<<<< HEAD
-<script src="/public/js/cal.js"></script>
-=======
-<script src="/js/profile"></script>
->>>>>>> f9d08db (updated profile routes to use sessions)
+{{!-- <script src="/js/scriptprofile.js" type="scrpit/js"></script> --}}
+<script>
+  const age = document.getElementById("age");
+const weight =document.getElementById("weight");
+const height =document.getElementById("height");
+const female =document.getElementById("genderfemale");
+const male = document.getElementById("genderMale")
+const gender =""
+console.log("hello")
+const getGender=(female,male)=>{
+if (!male && female){
+    gender = female;
+    return gender;
+    
+}else{
+    gender = male;
+    return gender;
+}}
+
+// get to the user info
+// name,age,weight, height,goal, gender
+
+// post with enter create new data and send data back
+
+fetch("/api/profile/data/"+ req.session.userId).then(response=>{
+    return response.json()
+        }).then(_data=>{
+          res.render("profile",{name:profileData.userName,age:profileData.age,height:profileData.height, weight: profileData.weight, gender:profileData});
+        });
+    
+
+// add event listener to initate the post
+fetch('/api/profile/userinfo'), {
+    method: "post",
+    headers:{
+        Accept: 'application.json',
+        'content-type': 'application/json'
+    },
+    body: JSON.stringify({
+        height:height,
+        weight: weight,
+        gender:gender,
+        age:age,
+        goal:goal
+  
+
+    }),
+    cache:'default'
+}
+
+</script>
