@@ -16,8 +16,7 @@ router.post('/', async(req, res) => {
             req.session.loggedIn = true
             res.redirect("/api/landingpage")
         })
-
-    })
+})
     .catch (err => {
         res.status(500).json(err)
     })
