@@ -23,7 +23,6 @@ User.init(
       type: DataTypes.STRING,
       allowNull: false
     }
-// ADD PASSWORD COLUMN???
   },
   {
     sequelize,
