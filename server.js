@@ -10,12 +10,6 @@ const SequelizeStore = require("connect-session-sequelize")(session.Store)
 const app = express();
 const PORT = process.env.PORT || 3001;
 
-
-
-
-
-
-
 app.use(session({
   secret: "my secret",
   cookie: {},
@@ -38,8 +32,6 @@ app.use(express.static('public'));
 
 // to use routes accross all
 app.use(routes);
-
-
 
 sequelize.sync({ force: false }).then(() => {
   app.listen(PORT, () => console.log('Now listening'));

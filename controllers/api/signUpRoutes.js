@@ -8,7 +8,7 @@ router.post('/', async(req, res) => {
     User.create({
         name: req.body.name,
         email: req.body.email,
-        password: req.body.email
+        password: req.body.password
     })
     .then(createdUser => {
         req.session.save(()=>{
