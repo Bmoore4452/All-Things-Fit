@@ -1,10 +1,10 @@
 {{!-- list of custom workouts --}}
 <div class = "card-container">
-    {{#each serializedData as |data|}}
+    {{#each custom}}
     <div class="card">
         <div class="card-body">
-            <h5 class="card-title">{{data.id}}</h5>
-            <p class="card-text">{{data.}}</p>
+            <h5 class="card-title">{{custom.id}}</h5>
+            <p class="card-text">{{}}</p>
             <p id="oneRep">click here for Cal</p>
         </div>
     </div>
@@ -12,8 +12,8 @@
 </div>
 
 {{!-- specific routines w/in custom workout --}}
-<div class = "card-container">
+{{!-- <div class = "card-container">
     {{#each }}
     
     {{/each}}
-</div>
+</div> --}}
