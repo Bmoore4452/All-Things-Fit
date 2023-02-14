@@ -14,7 +14,11 @@ router.post('/', (req, res) => {
         }})
         .then((user)=>{
             if(user){
-                res.status(200).json({ message: "Success" });
+                req.session.save(()=>{
+                    req.session.userId = user.id
+                    req.session.loggedIn = true
+                    res.status(200).json({ message: "Success" });
+                });
             }else{
                 res.status(400).json({ message: "User not found" });
             }
