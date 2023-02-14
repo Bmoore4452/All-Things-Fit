@@ -1,47 +1,47 @@
 <main>
-    <div class="title workout-page">
-        <H2 class="workout-page">Users Name</H2>
-    </div>
-    <div>
+  <div class="title workout-page">
+    <H2 class="workout-page">Users Name</H2>
+  </div>
+  <div>
 
-        <div class="card-container">
+    <div class="card-container">
 
-            <div class="row card list">
-                <div>
-                    <p class="card-top-text"> About </p>
-                </div>
-                {{!-- not sure what gets passed in here. --}}
- <form action="/">
-  <label for="age"> Age:</label>
-  <input type="text" id="age" name="age"><br><br>
-  <label for="weight">Weight:</label>
-  <input type="text" id="weight" name="weight"><br><br>
-  <label for="height">Height:</label>
-  <input type="text" id="height" name="height"><br><br>
-  <input type="submit" value="Submit">
-</form>
-                </div>
-            
-            <div class="row card main-content">
-                <div>
-                    <p class="card-top-text" id="workout-name">What your pushing for!</p>
-                </div>
-
-                <div>
-                  <h2>Your Goal</h2>
-                    <p>{{GOAL}}</p>
-                </div>
-                <div>
-                  <h2>Ideal Body weigh</h2>
-                    <p>{{IBW}}</p>
-                </div>
-                <div>
-                  <h2>Basal Metabolism Rate</h2>
-                    <p>{{BMR}}</p>
-                </div>
-            </div>
+      <div class="row card list">
+        <div>
+          <p class="card-top-text"> About </p>
         </div>
+        {{! not sure what gets passed in here. }}
+        <form action="/">
+          <label for="age"> Age:</label>
+          <input type="text" id="age" name="age" /><br /><br />
+          <label for="weight">Weight:</label>
+          <input type="text" id="weight" name="weight" /><br /><br />
+          <label for="height">Height:</label>
+          <input type="text" id="height" name="height" /><br /><br />
+          <input type="submit" value="Submit" />
+        </form>
+      </div>
+
+      <div class="row card main-content">
+        <div>
+          <p class="card-top-text" id="workout-name">What your pushing for!</p>
+        </div>
+
+        <div>
+          <h2>Your Goal</h2>
+          <p>{{GOAL}}</p>
+        </div>
+        <div>
+          <h2>Ideal Body weigh</h2>
+          <p>{{IBW}}</p>
+        </div>
+        <div>
+          <h2>Basal Metabolism Rate</h2>
+          <p>{{BMR}}</p>
+        </div>
+      </div>
     </div>
+  </div>
 </main>
 
-<script src="/public/js/cal.js"></script>
+<script src="/js/cal.js"></script>
