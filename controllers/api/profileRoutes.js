@@ -6,8 +6,8 @@ const { Profile } = require("../../models");
 // const idealBodyWeightW = IBW_women(height, age);
 // const idealBodyWeightM = IBW_men(height, age);
 
-function getBMR(gender){
-    if(gender === female){
+function getBMR(gender,weight,height,age){
+    if(gender === "female"){
         bmr= fitness.BMR_women(weight, height, age);
         return brm;
     }else{ 
@@ -33,7 +33,7 @@ router.post('/userinfo', async(req,res) =>{
         weight: req.body.weight,
         gender:req.body.gender,
         age:req.body.age, 
-        bmr:getBMR(req.body.weight,req.body.height,req.body.age),
+        bmr:getBMR(req.body.gender.req.body.weight,req.body.height,req.body.age),
         goal:req.body.goal,
         user_id: req.session.userId,
 

@@ -16,7 +16,7 @@ router.use("/signup", signUpRoutes);
 router.use("/landingpage", landingpage);
 router.use("/random", randomRoutes);
 router.use("/custom", customWorkout);
-router.use("/profile",profileRoutes)
+router.use('/profile',profileRoutes)
 
 
 module.exports = router;
