@@ -6,6 +6,8 @@ const signUpRoutes = require("./signUpRoutes");
 const landingpage = require("./landingPage");
 const randomRoutes = require("./randomRoutes");
 const customWorkout = require("./customWorkoutRoutes");
+const profileRoutes = require("./profileRoutes")
+
 
 router.use("/instructor", instructorRoutes);
 router.use("/shared", sharedRoutes);
