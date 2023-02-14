@@ -11,15 +11,21 @@ Custom.init(
             allowNull: false,
             primaryKey: true,
         },
-        cardio: {
+        workout: {
             type: DataTypes.String,
         },
-        upper:{
-            type: DataTypes.String,
-        },
-        lower:{
-            type: DataTypes.String,
-        },
+        user_name:{
+            type: DataTypes.INTEGER,
+            refrences:"User",
+            referencesKey:"id",
+            allowNull: false,
+         },
+         user_id: {
+            type: DataTypes.INTEGER,
+            refrences:"User",
+            referencesKey:"id",
+            allowNull: false,
+         }, 
     },
     {
         sequelize,

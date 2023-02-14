@@ -3,7 +3,8 @@ const title = document.getElementById("title");
 const description = document.getElementById("description");
 const WOplan = document.getElementById("temp");
 const WOprogram = [];
-
+const user = sessionStorage.getItem("userID")
+console.log(user);
 const addWorkout = () => {
     let obj = {
         type: type.value,
@@ -33,13 +34,21 @@ const kill = (index) => {
 // pushes array to database
 const post = () => {
     if (WOprogram.length > 0) {
+        let plan = JSON.stringify(WOprogram);
         // call the post api
         fetch('/api/custom/add', {
             method: 'POST',
-        },
-        
-        )
-        console.log(`work out pushed to server`);
+            headers: {
+                Accept: 'application.json',
+            'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({
+                Id: user,
+                workout: plan,
+            }),
+            cache: 'default'
+        })
+        window.location.replace("/api/shared");
     } else{
         // create error box
         
