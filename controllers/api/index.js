@@ -9,6 +9,7 @@ const randomRoutes = require("./randomRoutes");
 const profileRoutes = require("./profileRoutes")
 
 const customWorkout = require("./customWorkoutRoutes");
+const profileRoutes = require("./profileRoutes")
 
 
 router.use("/instructor", instructorRoutes);
@@ -21,6 +22,7 @@ router.use("/random", randomRoutes);
 router.use("/profile",profileRoutes)
 
 router.use("/custom", customWorkout);
+router.use("/profile",profileRoutes)
 
 
 module.exports = router;
