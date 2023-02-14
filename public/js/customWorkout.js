@@ -25,18 +25,24 @@ const addWorkout = () => {
 const kill = (index) => {
     //remove array
     WOprogram.splice(WOprogram.indexOf(index));
-    console.log(WOprogram);
     //remove html
     let temp = document.getElementById(index);
     temp.remove();
-    console.log(`this object should be removed`);
 }
 
 // pushes array to database
 const post = () => {
     if (WOprogram.length > 0) {
+        // call the post api
+        fetch('/api/custom/add', {
+            method: 'POST',
+        },
+        
+        )
         console.log(`work out pushed to server`);
     } else{
+        // create error box
+        
         console.log(`please add a workout to the plan`);
     }
     

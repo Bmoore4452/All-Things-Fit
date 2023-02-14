@@ -7,11 +7,8 @@ router.get('/', async(req, res) => {
 });
 
 router.post('/add', async(req, res) => {
-    let {} = req.body;
+    Workout.create({ 
 
-    temp.create({
-        UserName,
-        Workout
     })
     .then()
     .catch(err => console.log(err));
