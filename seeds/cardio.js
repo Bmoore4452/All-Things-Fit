@@ -9,7 +9,7 @@ const cardioData = [
     numberOfSet: 4,
   },
   {
-    workout: "Wak",
+    workout: "Walk",
     description:
       "Low impact exercise that will have you outside and enjoying the fresh air. ",
     distance: "2 miles",

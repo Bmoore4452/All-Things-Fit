@@ -13,7 +13,6 @@ header {
   justify-content: space-between;
 }
 
-
 nav ul {
   display: flex;
   list-style-type: none;
@@ -188,7 +187,8 @@ button {
 /* END (ERIC) */
 
 .workout-page {
-  align-items: center;
+  margin: 5px 0 0 0;
+  text-align: center;
 }
 
 .db-list {
@@ -197,7 +197,7 @@ button {
 }
 .db-selection {
   font-size: medium;
-  color: darkgray;
+  color: black;
 }
 
 .random {
@@ -221,4 +221,26 @@ button {
 
 .loginTitle {
   margin: 4rem 0 2rem 0;
+}
+
+#addCardio {
+  border: solid;
+  border-radius: 10px;
+  padding: 5px;
+  background-color: rgb(255, 0, 48);
+  cursor: pointer;
+}
+#addLowerbody {
+  border: solid;
+  border-radius: 10px;
+  padding: 5px;
+  background-color: rgb(255, 0, 48);
+  cursor: pointer;
+}
+#addUpperbody {
+  border: solid;
+  border-radius: 10px;
+  padding: 5px;
+  background-color: rgb(255, 0, 48);
+  cursor: pointer;
 }
