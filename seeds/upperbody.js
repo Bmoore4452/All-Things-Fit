@@ -7,7 +7,7 @@ const upperBodyData = [
     numberOfRep: 15,
   },
   {
-    workout: "Biscep curls",
+    workout: "Biceps Curls",
     numberOfSet: 3,
     numberOfRep: 15,
   },
