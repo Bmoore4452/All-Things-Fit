@@ -3,8 +3,8 @@ const title = document.getElementById("title");
 const description = document.getElementById("description");
 const WOplan = document.getElementById("temp");
 const WOprogram = [];
-const user = sessionStorage.getItem("userID")
-console.log(user);
+
+
 const addWorkout = () => {
     let obj = {
         type: type.value,
@@ -43,7 +43,6 @@ const post = () => {
             'Content-Type': 'application/json'
             },
             body: JSON.stringify({
-                Id: user,
                 workout: plan,
             }),
             cache: 'default'

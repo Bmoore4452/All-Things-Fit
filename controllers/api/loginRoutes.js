@@ -16,6 +16,7 @@ router.post('/', (req, res) => {
             if(user){
                 req.session.save(()=>{
                     req.session.userId = user.id
+                    req.session.userName = user.name
                     req.session.loggedIn = true
                     res.status(200).json({ message: "Success" });
                 });
