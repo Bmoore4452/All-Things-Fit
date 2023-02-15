@@ -45,7 +45,6 @@ goal:{
     allowNull: false,
  },
 
-
 },
 {
     sequelize,

@@ -10,7 +10,7 @@
                     <p class="card-top-text"> About </p>
                 </div>
                 {{!-- not sure what gets passed in here. --}}
- <form action="/api/proflie/data">
+<div>
  <label for="goal"> What is your goal?:</label>
   <input type="text" id="goal" name="goal"><br><br>
   <label for="age"> Age:</label>
@@ -25,7 +25,7 @@
 <input type="radio" id="genderMale" name="male" value="gender">
 <label for="genderMale"> Male</label><br>
   <input id="profileSubmit" type="submit" value="Submit">
-</form>
+</div>
                 </div>
             
             <div class="row card main-content">
@@ -35,11 +35,11 @@
 
                 <div class="goal">
                   <h3 class="goalh2">Your Goal</h2>
-                    <p >{{goal}}</p>
+                    <p >{{this.porfileData.goal}}</p>
                 </div>
                 <div class="goal">
                   <h3>Ideal Body weigh</h2>
-                    <p>{{ibm}}</p>
+                    <p>{{this.profileData.ibm}}</p>
                 </div>
                 <div class="goal">
                   <h3>Basal Metabolism Rate</h2>
@@ -61,6 +61,8 @@ const height =document.getElementById("height");
 const female =document.getElementById("genderfemale");
 const male = document.getElementById("genderMale")
 const gender =""
+{{!-- const bmr
+const ibw --}}
 console.log("hello")
 const getGender=(female,male)=>{
 if (!male && female){
@@ -70,21 +72,39 @@ if (!male && female){
 }else{
     gender = male;
     return gender;
-}}
+}
+}
+
+const getBmr=(female,male)=>{
+if (!male && female){
+     bmr= fitness.BMR_women(weight, height, age)
+    return bmr;
+    
+}else{
+    bmr =fitness.BMR_men(weight, height, age)
+        return bmr;
+}
+}
+
+const getIbw=(female,male)=>{
+if (!male && female){
+    ibw = fitness.IBW_women( height, age);
+    return ibw;
+    
+}else{
+     ibw = fitness.IBW_men( height, age)
+        return ibw;
+}
+}
+
+
 // get to the user info
 // name,age,weight, height,goal, gender
 
 // post with enter create new data and send data back
 
-fetch("/api/profile/data/").then(response=>{
-    return response.json()
-        }).then(_data=>{
-          res.render("profile",{name:profileData.userName,age:profileData.age,height:profileData.height, weight: profileData.weight, gender:profileData});
-        });
-    
-
-const profileListener = () => fetch('/api/profile/userinfo', {
-    method: "post",
+const profileListener = () => fetch('/api/profile/infouser', {
+    method: "POST",
     headers:{
         Accept: 'application.json',
         'content-type': 'application/json'
@@ -95,6 +115,8 @@ const profileListener = () => fetch('/api/profile/userinfo', {
         gender:gender,
         age:age,
         goal:goal,
+        {{!-- bmr:bmr,
+        ibw:ibw, --}}
 
     }),
     cache:'default'
