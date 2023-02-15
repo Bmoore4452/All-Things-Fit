@@ -14,19 +14,19 @@ const idealBodyWeightM = fitness.IBW_men(height, age);
 // using destructuring the argument to make it easier to call and read. 
 function getBMR({ gender, weight, height, age }) {
     if(gender === "female"){
-        bmr= fitness.BMR_women(weight, height, age);
+        bmr= womensBMR (weight, height, age);
         return brm;
     }else{ 
-        bmr =fitness.BMR_men(weight, height, age)
+        bmr = mensBMR (weight, height, age); 
         return bmr;
     }
 }
 function getIBW({ height, age }){
     if (gender === "female"){
-        ibw = fitness.IBW_women( height, age);
+        ibw = idealBodyWeightW ( height, age);
         return brm;
     }
-       ibw = fitness.IBW_men( height, age)
+       ibw = idealBodyWeightM (height, age)
         return bmr;
     
 }
