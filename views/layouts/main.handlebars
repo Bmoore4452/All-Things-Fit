@@ -33,36 +33,54 @@
             class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll"
             style="--bs-scroll-height: 100px;"
           >
-          {{#if loggedin}}
-            <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle"
-                href="#"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                Workouts
-              </a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="/api/instructor">Instructor
-                    Led</a></li>
-                <li><a class="dropdown-item" href="/api/random">Random</a></li>
-                <li><a class="dropdown-item" href="/api/custom">Custom</a></li>
-              </ul>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="/api/profile">Profile</a>
-            </li>
-            {{/if}}
-            {{#if loggedin}}
-              <li class="nav-item">
-                <a class="nav-link" href="/">Log-Out</a>
+            {{#if pikachu}}
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Workouts
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="/api/instructor">Instructor
+                      Led</a></li>
+                  <li><a
+                      class="dropdown-item"
+                      href="/api/random"
+                    >Random</a></li>
+                  <li><a
+                      class="dropdown-item"
+                      href="/api/custom"
+                    >Custom</a></li>
+                </ul>
               </li>
-            {{else}}
+              <li class="nav-item">
+                <a class="nav-link" href="/api/profile">Profile</a>
+              </li>
+            {{/if}}
+            {{#if pikachu}}
               <li class="nav-item">
                 <a class="nav-link" href="/api/login">Log-In</a>
               </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/api/signup">Sign-Up</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Log-Out</a>
+              </li>
+            {{else}}
+              <li class="nav-item">
+                <a class="nav-link" href="#">Log-Out</a>
+              </li>
+              {{! <li class="nav-item">
+                <a class="nav-link" href="/api/login">Log-In</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/api/signup">Sign-Up</a>
+              </li> }}
             {{/if}}
           </ul>
         </div>

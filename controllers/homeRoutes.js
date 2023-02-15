@@ -1,7 +1,7 @@
 const router = require('express').Router();
 
 router.get('/', async (req, res) => {
-    res.render('homepage');
+    res.render('homepage',{pikachu: req.session.loggedIn});
   });
 // keey commented out till sessions are working
 //   router.get("/profile", async (req, res) => {

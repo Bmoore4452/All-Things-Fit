@@ -4,7 +4,7 @@ const { Cardio, LowerBody, UpperBody } = require("../../models");
 const router = require("express").Router();
 
 router.get("/", (req, res) => {
-  res.render("random");
+  res.render("random", { pikachu: req.session.loggedIn });
 });
 router.get("/cardio", (req, res) => {
   Cardio.findAll()
