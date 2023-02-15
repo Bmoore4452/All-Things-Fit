@@ -1,20 +1,23 @@
 <main class="card-container">
-    <div class = "card">
-        
+    <div class="card">
+
         <div class="card-top-text loginTitle">
             <p>Login</p>
         </div>
 
         <label for="username"><b>Username</b></label>
-        <input type="text" placeholder="Enter Username" name = "username" required>  
-        
+        <input id="user-login" type="text" placeholder="Enter Username" name="username" required>
+
         <label for="psw"><b>Password</b></label>
-        <input type="text" placeholder="Enter Password" name = "psw" required>   
-        
+        <input id="login-password" type="password" placeholder="Enter Password" name="psw" required>
+
+        <p id="wrong-user"></p>
 
         <div class="card-button loginTitle">
-            <button type="submit">Login</button>
-        </div>   
+            <button onclick="handleLogin()">Login</button>
+        </div>
     </div>
 
 </main>
+
+<script src="/js/login.js"></script>

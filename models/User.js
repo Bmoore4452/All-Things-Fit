@@ -14,6 +14,7 @@ User.init(
     name: {
       type: DataTypes.STRING,
       allowNull: false,
+      primaryKey: true,
     },
     email: {
       type: DataTypes.STRING,
@@ -23,7 +24,6 @@ User.init(
       type: DataTypes.STRING,
       allowNull: false
     }
-// ADD PASSWORD COLUMN???
   },
   {
     sequelize,
