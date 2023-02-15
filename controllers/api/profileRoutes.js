@@ -73,7 +73,7 @@ router.post('/infouser', async(req,res) =>{
         gender,
         age, 
         bmr: await getBMR({ gender, weight, height, age }),
-        ibw: await ibw,
+        ibw: await getIBW({ height, age }),
         goal,
         user_id:req.session.userId,
     })
