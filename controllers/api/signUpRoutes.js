@@ -4,21 +4,22 @@ router.get("/", async (req, res) => {
   res.render("signup", { pikachu: req.session.loggedIn });
 });
 
-router.post("/", async (req, res) => {
-  User.create({
-    name: req.body.name,
-    email: req.body.email,
-    password: req.body.password,
-  })
-    .then((createdUser) => {
-      req.session.save(() => {
-        req.session.userId = createdUser.id;
-        req.session.loggedIn = true;
-        res.redirect("/api/landingpage");
-      });
+router.post('/', async(req, res) => {
+    User.create({
+        name: req.body.name,
+        email: req.body.email,
+        password: req.body.password
     })
-    .catch((err) => {
-      res.status(500).json(err);
+    .then(createdUser => {
+        req.session.save(()=>{
+            req.session.userId = createdUser.id
+            req.session.userName = user.name
+            req.session.loggedIn = true
+            res.redirect("/api/landingpage")
+        })
+})
+    .catch (err => {
+        res.status(500).json(err)
     });
 });
 

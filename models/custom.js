@@ -12,10 +12,10 @@ Custom.init(
             primaryKey: true,
         },
         workout: {
-            type: DataTypes.String,
+            type: DataTypes.STRING,
         },
         user_name:{
-            type: DataTypes.INTEGER,
+            type: DataTypes.STRING,
             refrences:"User",
             referencesKey:"id",
             allowNull: false,
