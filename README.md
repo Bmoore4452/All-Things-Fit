@@ -27,5 +27,9 @@ Here is a link to my Github account:
 
 Please feel free to contact me at r.moore803@gmail.com with instructions on how to reach me with additional questions
 
+## Deployed Application
+
+https://homefitwellness.herokuapp.com/
+
 
 
