@@ -17,7 +17,7 @@ function getBMR(gender,weight,height,age){
 }
 
 router.get('/', async(req, res) => {
-    res.render("profile")
+    res.render("profile", { pikachu: req.session.loggedIn });
 });
 
 router.get("/data/:id", async (req,res)=> {

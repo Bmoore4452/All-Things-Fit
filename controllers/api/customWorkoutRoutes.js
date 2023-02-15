@@ -3,7 +3,7 @@ const {User} = require("../../models")
 // localhost:3001/api/custom
 
 router.get('/', async(req, res) => {
-    res.render("customWorkout");
+    res.render("customWorkout", { pikachu: req.session.loggedIn });
 });
 
 router.post('/add', async(req, res) => {
