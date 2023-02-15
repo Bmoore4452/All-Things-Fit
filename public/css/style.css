@@ -5,6 +5,7 @@
 
 header {
   width: 100vw;
+  height: 80px;
   margin-left: auto;
   margin-right: auto;
   background-color: rgb(255, 0, 48);
@@ -51,7 +52,8 @@ li {
 }
 
 header img {
-  width: 15vh;
+  width: 8vw;
+  height: auto;
 }
 
 .intro-text {
@@ -92,6 +94,18 @@ main {
 }
 
 .card-image-1 {
+  min-height: 200px;
+  width: 30vw;
+  /* background-image: url(https://images.unsplash.com/photo-1518459031867-a89b944bffe4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1141&q=80); */
+  background-position: 50% 50%;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgb(255, 255, 255);
+}
+
+.card-image-4 {
   min-height: 200px;
   width: 30vw;
   background-image: url(https://images.unsplash.com/photo-1518459031867-a89b944bffe4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1141&q=80);
