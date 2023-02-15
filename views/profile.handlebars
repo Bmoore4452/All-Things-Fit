@@ -1,11 +1,14 @@
-<main>
-
-            <div class="row card list">
-                <div>
-                    <p class="card-top-text"> About </p>
-                </div>
-                {{!-- not sure what gets passed in here. --}}
- <form action="/">
+<div class="title workout-page">
+<H2 class="workout-page">Random Workout</H2>
+    </div>
+<div>
+     
+<div class="card-container">
+   
+    <div class = "row card list">
+        <div>
+<p  class="card-top-text card-title">Generated Workout</p>
+      <form action="/api/profile/data/">
   <label for="age"> Age:</label>
   <input type="text" id="age" name="age"><br><br>
   <label for="weight">Weight:</label>
@@ -17,11 +20,11 @@
 <label for="genderMale"> Male</label><br>
   <input type="submit" value="Submit">
 </form>
-                </div>
-            
-            <div class="row card main-content">
+        </div>
+    </div>
+    <div class="row card main-content">
                 <div class="goal">
-                    <h2 class="card-top-text" id="workout-name">Goals</p>
+                    <h2 class="card-top-text" id="workout-name">Goals</h2>
                 </div>
 
                 <div class="goal">
@@ -37,12 +40,15 @@
                     <p>{{bmr}}</p>
                 </div>
             </div>
-
+           
         </div>
-      </div>
+       
     </div>
-  </div>
+</div>
+</div>
 </main>
+
+
 
 
 <script src="/js/scriptprofile.js" type="scrpit/js"></script>

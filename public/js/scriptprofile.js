@@ -19,7 +19,7 @@ if (!male && female){
 
 // post with enter create new data and send data back
 
-fetch("/api/profile/data/"+ req.session.userId).then(response=>{
+fetch("/api/profile/data/").then(response=>{
     return response.json()
         }).then(_data=>{
           res.render("profile",{name:profileData.userName,age:profileData.age,height:profileData.height, weight: profileData.weight, gender:profileData});
@@ -38,7 +38,6 @@ const profileListener = () => fetch('/api/profile/userinfo', {
         gender:gender,
         age:age,
         goal:goal,
-        
 
     }),
     cache:'default'
