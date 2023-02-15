@@ -1,7 +1,7 @@
-const router = require('express').Router();
-const {User} = require('../../models')
-router.get('/', async(req, res) => {
-    res.render("signup")
+const router = require("express").Router();
+const { User } = require("../../models");
+router.get("/", async (req, res) => {
+  res.render("signup", { pikachu: req.session.loggedIn });
 });
 
 router.post('/', async(req, res) => {
@@ -20,7 +20,7 @@ router.post('/', async(req, res) => {
 })
     .catch (err => {
         res.status(500).json(err)
-    })
+    });
 });
 
 module.exports = router;

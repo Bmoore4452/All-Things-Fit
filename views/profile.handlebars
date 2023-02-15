@@ -11,42 +11,47 @@
                     <p class="card-top-text"> About </p>
                 </div>
                 {{!-- not sure what gets passed in here. --}}
- <form action="/">
+ <form action="/api/proflie/data">
+ <label for="goal"> What is your goal?:</label>
+  <input type="text" id="goal" name="goal"><br><br>
   <label for="age"> Age:</label>
   <input type="text" id="age" name="age"><br><br>
   <label for="weight">Weight:</label>
   <input type="text" id="weight" name="weight"><br><br>
   <label for="height">Height:</label>
   <input type="text" id="height" name="height"><br><br>
-  <input type="checkbox" id="genderfemale" name="vehicle1" value="Bike">
+  <p>Select your gender.</p>
+  <input type="radio" id="genderfemale" name="female" value="female">
 <label for="genderfemale"> Female</label><br>
-<input type="checkbox" id="genderMale" name="vehicle2" value="Car">
+<input type="radio" id="genderMale" name="male" value="gender">
 <label for="genderMale"> Male</label><br>
-  <input type="submit" value="Submit">
+  <input id="profileSubmit" type="submit" value="Submit">
 </form>
                 </div>
             
             <div class="row card main-content">
-                <div>
-                    <p class="card-top-text" id="workout-name">What your pushing for!</p>
+                <div class="goal">
+                    <h2 class="card-top-text" id="workout-name">Goals</p>
                 </div>
 
-                <div>
-                  <h2>Your Goal</h2>
-                    <p>{{GOAL}}</p>
+                <div class="goal">
+                  <h3 class="goalh2">Your Goal</h2>
+                    <p >{{goal}}</p>
                 </div>
-                <div>
-                  <h2>Ideal Body weigh</h2>
-                    <p>{{IBW}}</p>
+                <div class="goal">
+                  <h3>Ideal Body weigh</h2>
+                    <p>{{ibm}}</p>
                 </div>
-                <div>
-                  <h2>Basal Metabolism Rate</h2>
-                    <p>{{BMR}}</p>
+                <div class="goal">
+                  <h3>Basal Metabolism Rate</h2>
+                    <p>{{bmr}}</p>
                 </div>
             </div>
         </div>
     </div>
 </main>
 
-<script src="/js/profile"></script>
+<script src="/js/scriptprofile.js" type="scrpit/js"></script>
+
+
 

@@ -1,33 +1,51 @@
-{{!-- button populates card container w/ specified workouts --}}
+{{! button populates card container w/ specified workouts }}
+<div class="title workout-page">
+  <H2 class="workout-page">Random Workouts</H2>
+</div>
 <div class="card-container loginTitle">
-    <div class="card">
-        <div>
-            <label for="Workout type">Choose a Workout type:</label>
-            <select name="type" id="type">
-            <option value="Cardio">Cardio</option>
-            <option value="UpperBody">UpperBody</option>
-            <option value="LowerBody">LowerBody</option>
-            </select>
-        </div>
-        
-        <div>
-            <label for="title"></label>
-            <input id = "title" type="text" placeholder="Title of Workout" maxlength="30">
-        </div>
+  <div class="card">
+    <div>
+      <label for="Workout type">Choose a Workout type:</label>
+      <select name="type" id="type">
+        <option value="Cardio">Cardio</option>
+        <option value="UpperBody">UpperBody</option>
+        <option value="LowerBody">LowerBody</option>
+      </select>
+    </div>
 
-        <div>
-            <label for="description"></label>
-            <textarea name="description" id="description" placeholder="Enter a short description" col="30" rows="15"></textarea>
-        </div>  
+    <div>
+      <label for="title"></label>
+      <input
+        id="title"
+        type="text"
+        placeholder="Title of Workout"
+        maxlength="30"
+      />
+    </div>
 
-        <input type="submit" onclick="addWorkout()">
-    </div>  
+    <div>
+      <label for="description"></label>
+      <textarea
+        name="description"
+        id="description"
+        placeholder="Enter a short description"
+        col="30"
+        rows="15"
+      ></textarea>
+    </div>
+
+    <input type="submit" onclick="addWorkout()" />
+  </div>
+
 
     <div class="card">
         <div id="temp">
         </div>   
         <button onclick="post()">post</button> 
+
     </div>
+    <button>post</button>
+  </div>
 </div>
 
 <script src="/js/customWorkout.js"></script>
