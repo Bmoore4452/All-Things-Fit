@@ -42,6 +42,7 @@ const profileListener = () => fetch('/api/profile/userinfo', {
     }),
     cache:'default'
 })
+window.location.replace("/api/userinfo")
 
 // add event listener to initate the post
 document.getElementById("profileSubmit").addEventListener('click', profileListener );
