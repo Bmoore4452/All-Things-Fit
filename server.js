@@ -21,7 +21,7 @@ app.use(session({
 }))
 
 const hbs = exphbs.create({});
-
+app.set("views", path.join(__dirname, "./views"));
 app.engine("handlebars", hbs.engine);
 app.set("view engine", "handlebars");
 
