@@ -7,10 +7,6 @@ const landingpage = require("./landingPage");
 const randomRoutes = require("./randomRoutes");
 const customWorkout = require("./customWorkoutRoutes");
 const profileRoutes = require("./profileRoutes")
-<<<<<<< HEAD
-
-=======
->>>>>>> 0147459 (update profile route in index)
 
 router.use("/instructor", instructorRoutes);
 router.use("/shared", sharedRoutes);

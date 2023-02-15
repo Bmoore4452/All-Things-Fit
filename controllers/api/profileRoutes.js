@@ -20,8 +20,8 @@ router.get('/', async(req, res) => {
     res.render("profile")
 });
 
-router.get("/data/:id", async (req,res)=> {
-const profileData = await Profile.findOne({where:{user_id:req.params.id}})
+router.get("/api/profile/data/", async (req,res)=> {
+const profileData = await Profile.findOne({where:{}})
 res.status(200).json(profileData);
 })
 
