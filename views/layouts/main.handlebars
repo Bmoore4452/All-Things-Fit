@@ -10,49 +10,56 @@
   <link rel="stylesheet" type="text/css" href="/css/style.css" />
 </head>
 <header>
-  <img src="/css/Home Fit Wellness.png" alt="" />
-  <nav class="navbar navbar-expand-lg">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="/">Home</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
-        aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarScroll">
-        <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Workouts
-            </a>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="/api/instructor">Instructor
-                  Led</a></li>
-              <li><a class="dropdown-item" href="/api/random">Random</a></li>
-              <li><a class="dropdown-item" href="/api/custom">Custom</a></li>
-            </ul>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="/api/profile">Profile</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="/api/login">Log-In</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="/api/signup">Sign-Up</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" onclick="handleLogout()" href="#">Log-Out</a>
-          </li>
-          {{! <li class="nav-item">
-            <a class="nav-link" href="/api/login">Log-In</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="/api/signup">Sign-Up</a>
-          </li> }}
-        </ul>
-      </div>
+  <div class="header-container">
+    <div class="head-title">
+      <h2 class="name">HOME FIT <span class="wellness">WELLNESS</span> </h2>
     </div>
-  </nav>
+
+    <nav class="navbar navbar-expand-lg">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="/">Home</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+          aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarScroll">
+          <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Workouts
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="/api/instructor">Instructor
+                    Led</a></li>
+                <li><a class="dropdown-item" href="/api/random">Random</a></li>
+                <li><a class="dropdown-item" href="/api/custom">Custom</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/api/profile">Profile</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/api/login">Log-In</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/api/signup">Sign-Up</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" onclick="handleLogout()" href="#">Log-Out</a>
+            </li>
+            {{! <li class="nav-item">
+              <a class="nav-link" href="/api/login">Log-In</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/api/signup">Sign-Up</a>
+            </li> }}
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </div>
+
 </header>
 
 <body>

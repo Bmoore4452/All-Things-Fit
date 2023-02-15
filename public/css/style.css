@@ -1,54 +1,89 @@
 * {
-  margin: 0;
-  padding: 0;
+  margin: 0 !important;
+  padding: 0 !important;
 }
 
 header {
   width: 100vw;
-  height: 80px;
+  min-height: 10vh;
   margin-left: auto;
   margin-right: auto;
   background-color: rgb(255, 0, 48);
   color: white;
   display: flex;
+  justify-content: center;
+}
+
+.header-container{
+  display: flex;
+  width: 80vw;
   justify-content: space-between;
 }
-
-nav ul {
-  display: flex;
-  list-style-type: none;
-  font-size: 1.25vw;
-  position: relative;
+.head-title{
+ 
+  display: flex !important; 
+  justify-content: center !important;
+  text-align: center;
+  align-items: center !important;
+  min-height: 10vh;
+  text-shadow: 1px 1px 10px rgb(28, 77, 90);
 }
 
-li {
-  padding: 20px;
+/* .wellness{
+  color:rgb(255, 255, 127)  ;
+} */
+
+nav a{
+  color: rgb(251, 251, 251) !important;
+ margin-right: 10px !important;
+ font-size: 1rem !important;
+ border-right: 1px solid rgb(255, 255, 255);
+ padding-right: 5px !important;
 }
 
-#home-image {
-  width: 50vw;
-  margin: auto;
-  /* border: solid; */
-  display: block;
-  padding: 2em;
-  position: sticky;
+nav a:hover{
+  color: rgb(255, 255, 127) !important;
+ margin-right: 10px !important;
+ font-size: 1rem !important;
+ border-right: 1px solid rgb(255, 255, 127) ;
+ padding-right: 5px !important;
 }
-#home-image2 {
-  width: 80vw;
-  margin: auto;
-  /* border: solid; */
-  display: block;
-  padding: 2em;
-  position: sticky;
+
+nav a:active {
+  text-shadow: 0 0 15px rgb(28, 77, 90);
 }
 
 .main-container {
-  width: 80%;
-  margin: auto;
-  height: 100vh;
-  /* background-image: url(./AdobeStock_393036383.jpeg);
+  width: 100%;
+  height: 95vh;
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  flex-direction: column;
+}
+.intro-text{
+  margin-top: 10% !important;
+   text-align: center;
+  color: rgb(255, 0, 48);
+  font-weight: 600;
+}
+.img1-container{
+  width: 80vw;
+  min-height: 60vh;
+  background-image: linear-gradient(to bottom, rgba(242, 243, 249, 0.214), rgba(253, 127, 135, 0.73)), url(./AdobeStock_393036383.jpeg);
+  background-size: cover;
   background-position: 50% 50%;
-  background-size: cover; */
+  margin-bottom: 5% !important;
+  
+}
+
+.img2-container{
+  width: 80vw;
+ min-height: 30vh;
+  background-image: url(./AdobeStock_120493815.jpeg);
+  background-size: cover;
+  background-position: 50% 50%;
+  margin: 4% 0 4% 0 !important;
 }
 
 header img {
@@ -56,11 +91,72 @@ header img {
   height: auto;
 }
 
-.intro-text {
-  text-align: center;
-  color: rgb(255, 0, 48);
-  font-weight: 600;
+.info-container{
+  min-height: 60vh;
+  width: 80vw;
+  display: flex;
+  justify-content: space-evenly;
+   background-color: rgb(0,0,0); 
+  background-color: rgba(0,0,0, 0.4); 
+  color: white;
+  font-weight: bold;
 }
+
+.info-text{
+  width: 35vw;
+  height: 60vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
+  text-shadow: 1px 1px 10px black;
+}
+.info-text h4{
+  line-height: 1.6;
+}
+
+.login-signup{
+ width: 35vw;
+  height: 50vh;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-end;
+  text-align: center;
+}
+
+.btn-login,
+.btn-signup {
+  width: 10vw !important;
+  background-color: rgba(253, 76, 109, 0.695);
+  border: 1px solid rgb(255, 254, 254);
+  font-size: 1.2rem;
+  text-decoration: none;
+  color: white;
+  height: 8vh;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn-login:hover,
+.btn-signup:hover {
+  width: 10vw !important;
+  background-color: rgb(255, 46, 84);
+  border: 1px solid rgb(255, 254, 254);
+  font-size: 1.2rem;
+}
+
+.btn-login:active,
+.btn-signup:active {
+  width: 10vw !important;
+  background-color: rgb(255, 0, 47);
+  border: 1px solid rgb(255, 254, 254);
+  box-shadow: 0 0 15px white;
+  font-size: 1.2rem;
+}
+
 
 /* AFTER SIGN IN LANDING PAGE (ERIC) */
 
