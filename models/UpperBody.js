@@ -32,6 +32,4 @@ UpperBody.init(
   }
 );
 
-
-
 module.exports = UpperBody;
