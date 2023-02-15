@@ -55,7 +55,9 @@ router.get("/data", async (req,res)=> {
 
 
 router.post('/userinfo', async(req,res) =>{
-    
+    console.log('~~~ session', { session: req.session })
+    getIBW({ gender, height, age });
+    getBMR({ gender, weight, height, age })
     // descructuring req.body to use though the create
     const { weight, height, age, gender, goal } = req.body 
     Profile.create({
@@ -63,8 +65,8 @@ router.post('/userinfo', async(req,res) =>{
         weight,
         gender,
         age, 
-        bmr: getBMR({ gender, weight, height, age }),
-        ibw: getIBW({gender, height, age}),
+        bmr: await bmr,
+        ibw: await ibw,
         goal,
         user_id:req.session.userId
     })

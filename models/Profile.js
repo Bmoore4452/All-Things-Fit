@@ -15,6 +15,9 @@ Profile.init(
     primaryKey: true,
  
   },
+  age:{
+   type: DataTypes.INTEGER,
+},
     height:{
         type: DataTypes.INTEGER,
   },
