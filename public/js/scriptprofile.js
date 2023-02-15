@@ -26,8 +26,7 @@ fetch("/api/profile/data/"+ req.session.userId).then(response=>{
         });
     
 
-// add event listener to initate the post
-fetch('/api/profile/userinfo'), {
+const profileListener = () => fetch('/api/profile/userinfo', {
     method: "post",
     headers:{
         Accept: 'application.json',
@@ -40,13 +39,10 @@ fetch('/api/profile/userinfo'), {
         age:age,
         goal:goal,
         
-        user_id: req.session.userId
-
-        
 
     }),
     cache:'default'
-}
+})
 
-
-document.getElementById("oneRep").addEventListener(populateCalories);
+// add event listener to initate the post
+document.getElementById("profileSubmit").addEventListener('click', profileListener );
