@@ -1,21 +1,31 @@
 <main>
+    <div class="title workout-page">
+        <H2 class="workout-page">{{name}}</H2>
+    </div>
+    <div>
+
+        <div class="card-container">
 
             <div class="row card list">
                 <div>
                     <p class="card-top-text"> About </p>
                 </div>
                 {{!-- not sure what gets passed in here. --}}
- <form action="/">
+ <form action="/api/proflie/data">
+ <label for="goal"> What is your goal?:</label>
+  <input type="text" id="goal" name="goal"><br><br>
   <label for="age"> Age:</label>
   <input type="text" id="age" name="age"><br><br>
   <label for="weight">Weight:</label>
   <input type="text" id="weight" name="weight"><br><br>
   <label for="height">Height:</label>
   <input type="text" id="height" name="height"><br><br>
+  <p>Select your gender.</p>
+  <input type="radio" id="genderfemale" name="female" value="female">
 <label for="genderfemale"> Female</label><br>
 <input type="radio" id="genderMale" name="male" value="gender">
 <label for="genderMale"> Male</label><br>
-  <input type="submit" value="Submit">
+  <input id="profileSubmit" type="submit" value="Submit">
 </form>
                 </div>
             
@@ -37,14 +47,11 @@
                     <p>{{bmr}}</p>
                 </div>
             </div>
-
         </div>
-      </div>
     </div>
-  </div>
 </main>
 
-
 <script src="/js/scriptprofile.js" type="scrpit/js"></script>
+
 
 
