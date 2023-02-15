@@ -13,6 +13,7 @@ router.post('/', async(req, res) => {
     .then(createdUser => {
         req.session.save(()=>{
             req.session.userId = createdUser.id
+            req.session.userName = user.name
             req.session.loggedIn = true
             res.redirect("/api/landingpage")
         })

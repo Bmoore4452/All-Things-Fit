@@ -1,9 +1,15 @@
 const router = require('express').Router();
-const {Custom} = require("../../models")
+const{Custom} = require("../../models");
 
 router.get('/', async(req, res) => {
-    console.log(Custom);
-    res.render("sharedWorkout", {pikachu:req.session.userId, Gangar:req.session.userName, eve:Custom});
+    Custom.findAll()
+        .then((data) => {
+            res.render("sharedWorkout", {Custom: data});
+            console.log(Custom);
+        })
+        .catch((err) => {
+            res.status(500).jason(err);
+        })
 });
 
 module.exports = router;
