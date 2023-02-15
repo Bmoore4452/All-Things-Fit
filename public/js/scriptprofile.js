@@ -26,7 +26,8 @@ fetch("/api/profile/data/").then(response=>{
         });
     
 
-const profileListener = () => fetch('/api/profile/userinfo', {
+const profileListener = () => {
+    fetch('/api/profile/userinfo', {
     method: "post",
     headers:{
         Accept: 'application.json',
@@ -42,7 +43,7 @@ const profileListener = () => fetch('/api/profile/userinfo', {
     }),
     cache:'default'
 })
-window.location.replace("/api/userinfo")
-
+window.location.replace("/api/profile")
+}
 // add event listener to initate the post
 document.getElementById("profileSubmit").addEventListener('click', profileListener );

@@ -9,6 +9,8 @@ const profileData = [
        age:35,
        goal: "get bigger",
        gender:"male",
+       bmr:45,
+       ibw:65,
        user_id: 2,
     },
     {
@@ -18,6 +20,8 @@ const profileData = [
         age:21,
         goal: "lose weight",
         gender:"female",
+        bmr:45,
+       ibw:65,
         user_id: 5,
      },
      {
@@ -27,6 +31,8 @@ const profileData = [
         age:18,
         goal: "Workout 5 times a week. ",
         gender:"female",
+        bmr:45,
+       ibw:65,
         user_id: 10,
      },
      {
@@ -36,6 +42,8 @@ const profileData = [
         age:27,
         goal: "Be ready for a 5K. ",
         gender:"female",
+        bmr:45,
+       ibw:65,
         user_id: 6,
      }
 
