@@ -6,14 +6,14 @@ The Home Fit Wellness App was created for anyone who has wanted to begin a fitne
 
 ## Table of Contents 
 
-* [Installation](#installation)
+* [Technologies Used](#tech)
 * [Usage](#usage)
 * [Credits](#credits)
 * [Questions](#github)
 
 
-## Installation
-N/A
+## Technologies Used
+
 
 ## Usage
 With the creation of the Home Fit Wellness app a user can sign-up and have access to instructor led workouts that are specifically designed to help them get started on their fitness journey easliy from any room of their home. The user can also spice up their workouts with the random workout generator. If they are getting tired of the same workout they can get random exercises directly from a vast database of cardio, lower body, and upper body excercises. Furthrmore, when the user is ready, they can create their very own custom workouts that they can share amongst their peers creating organic community interaction.
@@ -30,6 +30,10 @@ Please feel free to contact me at r.moore803@gmail.com with instructions on how 
 ## Deployed Application
 
 https://homefitwellness.herokuapp.com/
+
+## Screenshot
+
+![Screenshot](./public/css/homefitwellness.herokuapp.com_%20(1).png)
 
 
 
